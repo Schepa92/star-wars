@@ -1,6 +1,6 @@
-import ErrorMessage from '../components/ErrorMessage';
-import HomePage from '../containers/HomePage';
-import PeoplePage from '../containers/PeoplePage';
+import ErrorMessage from '@components/ErrorMessage';
+import HomePage from '@containers/HomePage';
+import PeoplePage from '@containers/PeoplePage';
 
 const routesConfig = [
   {
