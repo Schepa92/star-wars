@@ -1,6 +1,3 @@
-const SWAPI_ROOT = 'https://swapi.dev/api/';
-const SWAPI_PEOPLE = 'people';
-
 // ВАРИАНТ АСИНХРОННОГО ЗАПРОСА
 export const getApiResource = async (url) => {
   try {
@@ -16,11 +13,6 @@ export const getApiResource = async (url) => {
   }
 };
 
-(async () => {
-  const body = await getApiResource(SWAPI_ROOT + SWAPI_PEOPLE);
-  console.log(body);
-})();
-
 // ВАРИАНТ ЗАПРОСА С ИСПОЛЬЗОВАНИЕМ ПРОМИСОВ
 // export const getApiResource = (url) => {
 //     fetch(url)
@@ -28,5 +20,3 @@ export const getApiResource = async (url) => {
 //       .then((body) => console.log(body.results))
 //       .catch((error) => console.log(error.message));
 //   };
-
-// getApiResource(SWAPI_ROOT + SWAPI_PEOPLE).then((body) => console.log(body));
