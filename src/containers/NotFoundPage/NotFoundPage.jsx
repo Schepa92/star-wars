@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router';
+import { useLocation } from 'react-router-dom';
 import img from './img/404.png';
 import styles from './NotFoundPage.module.css';
 
