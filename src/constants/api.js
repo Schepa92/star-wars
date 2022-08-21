@@ -7,7 +7,7 @@ export const SWAPI_PEOPLE = 'people';
 export const API_PEOPLE = HTTPS + SWAPI_ROOT + SWAPI_PEOPLE;
 
 const GUIDE_ROOT_IMG = 'https://starwars-visualguide.com/assets/img/';
-const GUILE_PEOPLE = 'characters';
+const GUIDE_PEOPLE = 'characters';
 export const GUIDE_IMG_EXTENSION = '.jpg';
 
-export const URL_IMG_PERSON = GUIDE_ROOT_IMG + GUILE_PEOPLE;
+export const URL_IMG_PERSON = GUIDE_ROOT_IMG + GUIDE_PEOPLE;
