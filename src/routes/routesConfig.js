@@ -1,6 +1,7 @@
 import HomePage from '@containers/HomePage';
 import PeoplePage from '@containers/PeoplePage';
 import NotFoundPage from '@containers/NotFoundPage';
+import PersonPage from '@containers/PersonPage/PersonPage';
 
 const routesConfig = [
   {
@@ -18,6 +19,10 @@ const routesConfig = [
   {
     path: '*',
     element: <NotFoundPage />,
+  },
+  {
+    path: '/people/:id',
+    element: <PersonPage />,
   },
 ];
 
