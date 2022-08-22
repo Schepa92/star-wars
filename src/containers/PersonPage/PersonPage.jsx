@@ -9,6 +9,7 @@ import { API_PERSON } from '@constants/api';
 
 import PersonPhoto from '@components/PersonPage/PersonPhoto';
 import PersonInfo from '@components/PersonPage/PersonInfo';
+import PersonLinkBack from '@components/PersonPage/PersonLinkBack';
 
 import styles from './PersonPage.module.css';
 
@@ -64,6 +65,8 @@ const PersonPage = ({ setErrorApi }) => {
   }, [id, setErrorApi]);
   return (
     <>
+      <PersonLinkBack />
+
       <div className={styles.wrapper}>
         <span className={styles.person__name}>{personName}</span>
         <div className={styles.container}>
