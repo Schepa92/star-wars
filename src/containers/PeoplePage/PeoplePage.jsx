@@ -5,14 +5,9 @@ import { withErrorApi } from '@hoc-helpers/withErrorApi';
 import PeopleList from '@components/PeoplePage/PeopleList';
 import PeopleNavigation from '@components/PeoplePage/PeopleNavigation';
 import { getApiResource } from '@utils/network';
-import {
-  getPeopleId,
-  getPeopleImage,
-  getPeoplePageId,
-} from '@services/getPeopleData';
+import { getPeopleId, getPeopleImage } from '@services/getPeopleData';
 import { API_PEOPLE } from '@constants/api';
 import { useQueryParams } from '@hooks/useQueryParams';
-
 import styles from './PeoplePage.module.css';
 
 const PeoplePage = ({ setErrorApi }) => {
