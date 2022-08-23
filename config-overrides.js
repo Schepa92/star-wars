@@ -13,6 +13,7 @@ module.exports = function override(config, env) {
     '@utils': 'src/utils',
     '@hooks': 'src/hooks',
     '@store': 'src/store',
+    '@context': 'src/context',
   })(config);
 
   return config;

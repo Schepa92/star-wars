@@ -30,8 +30,30 @@
   --text-shadow-yellow: 0 0 2px var(--color-white), 0 0 40px var(--color-yellow);
   --text-shadow-blue: 0 0 2px var(--color-white), 0 0 40px var(--color-blue);
 
-  --theme-default-header: #cccc46;
-  --theme-default-bgimage: url(@static/bg.jpg);
+  /*THEMES*/
+  --theme-light-header: #dfe2df;
+  --theme-dark-header: #ca6c6f;
+  --theme-neitral-header: #cccc46;
+  --theme-light-bgimage: linear-gradient(
+    to right top,
+    #000000,
+    #2a120d,
+    #412300,
+    #413f00,
+    #145e00
+  );
+  --theme-dark-bgimage: linear-gradient(
+    to right top,
+    #000000,
+    #250a0f,
+    #410913,
+    #5c030f,
+    #760000
+  );
+  --theme-neitral-bgimage: url(@static/bg.jpg);
+
+  --theme-default-header: var(--theme-neitral-header);
+  --theme-default-bgimage: var(--theme-neitral-bgimage);
 }
 
 body {
