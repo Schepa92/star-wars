@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { useEffect, useState, Suspense } from 'react';
 import { useParams } from 'react-router';
+import { useSelector } from 'react-redux';
 
 import { getApiResource } from '@utils/network';
 import { getPeopleImage } from '@services/getPeopleData';
@@ -24,8 +25,12 @@ const PersonPage = ({ setErrorApi }) => {
   const [personName, setPersonName] = useState(null);
   const [personPhoto, setPersonPhoto] = useState(null);
   const [personFilms, setPersonFilms] = useState(null);
+  const [personFavorite, setPersonFavorite] = useState(false);
+
+  const storeData = useSelector((state) => state.favoriteReducer);
 
   useEffect(() => {
+    storeData[id] ? setPersonFavorite(true) : setPersonFavorite(false);
     (async () => {
       const res = await getApiResource(`${API_PERSON}/${id}/`);
       if (res) {
@@ -77,7 +82,13 @@ const PersonPage = ({ setErrorApi }) => {
       <div className={styles.wrapper}>
         <span className={styles.person__name}>{personName}</span>
         <div className={styles.container}>
-          <PersonPhoto personPhoto={personPhoto} personName={personName} />
+          <PersonPhoto
+            personPhoto={personPhoto}
+            personName={personName}
+            personId={id}
+            personFavorite={personFavorite}
+            setPersonFavorite={setPersonFavorite}
+          />
 
           {personInfo && <PersonInfo personInfo={personInfo} />}
           {personFilms && (
