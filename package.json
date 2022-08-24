@@ -1,6 +1,7 @@
 {
   "name": "star-wars",
   "version": "0.1.0",
+  "homepage": "https://schepa92.github.io/star-wars/",
   "private": true,
   "dependencies": {
     "classnames": "^2.3.1",
