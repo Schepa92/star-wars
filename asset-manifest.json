@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9a277d7f.css",
+    "main.js": "/static/js/main.b8e23318.js",
+    "static/css/895.41a83979.chunk.css": "/static/css/895.41a83979.chunk.css",
+    "static/js/895.1a11c3b5.chunk.js": "/static/js/895.1a11c3b5.chunk.js",
+    "static/media/bg.jpg": "/static/media/bg.60aa646e44ae07b1472d.jpg",
+    "static/media/falcon.jpg": "/static/media/falcon.c1d0a8d1869b3fbdb9ab.jpg",
+    "static/media/han-solo.mp4": "/static/media/han-solo.db435084c403f6b37d4d.mp4",
+    "static/media/dark-side.jpg": "/static/media/dark-side.e0f8cab78e4bdd7db45d.jpg",
+    "static/media/light-side.jpg": "/static/media/light-side.eebc52171cd4ac0278ca.jpg",
+    "static/media/favorite-off.png": "/static/media/favorite-off.cf40d1e4c46595901103.png",
+    "static/media/mark.png": "/static/media/mark.38ccd15edf9d51967c8f.png",
+    "static/media/favorite-on.png": "/static/media/favorite-on.35d850fedbd3f7b2cf10.png",
+    "static/media/back.png": "/static/media/back.93100d551fe95b3be4cf.png",
+    "static/media/404.png": "/static/media/404.1062f5e41ef989b5973a.png",
+    "static/media/lightsaber.svg": "/static/media/lightsaber.eb7d4cd665426117002814db79fceef4.svg",
+    "static/media/space-station.svg": "/static/media/space-station.7a027c6ec10ba7b5d8c880df5f4e65ea.svg",
+    "static/media/droid.svg": "/static/media/droid.e59cd9ffbca010a59c9af48a5bbbcafb.svg",
+    "static/media/loader.svg": "/static/media/loader.49e711585555a6b831c3fd14cb678d24.svg",
+    "static/media/cancel.svg": "/static/media/cancel.00e5d25a4b7fd1eb07bef24013d98bdb.svg",
+    "index.html": "/index.html",
+    "main.9a277d7f.css.map": "/static/css/main.9a277d7f.css.map",
+    "main.b8e23318.js.map": "/static/js/main.b8e23318.js.map",
+    "895.41a83979.chunk.css.map": "/static/css/895.41a83979.chunk.css.map",
+    "895.1a11c3b5.chunk.js.map": "/static/js/895.1a11c3b5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a277d7f.css",
+    "static/js/main.b8e23318.js"
+  ]
+}
