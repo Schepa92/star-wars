@@ -30,26 +30,27 @@
 
   --text-shadow-yellow: 0 0 2px var(--color-white), 0 0 40px var(--color-yellow);
   --text-shadow-blue: 0 0 2px var(--color-white), 0 0 40px var(--color-blue);
+  --text-shadow-white: 0 0 1px var(--color-white);
 
   /*THEMES*/
   --theme-light-header: #dfe2df;
   --theme-dark-header: #ca6c6f;
   --theme-neitral-header: #cccc46;
-  --theme-light-bgimage: linear-gradient(
-    to right top,
-    #000000,
-    #2a120d,
-    #412300,
-    #413f00,
-    #145e00
+  --theme-light-bgimage: radial-gradient(
+    circle,
+    #1ca400,
+    #6d6c00,
+    #683a01,
+    #3f1a15,
+    #000000
   );
-  --theme-dark-bgimage: linear-gradient(
-    to right top,
-    #000000,
-    #250a0f,
-    #410913,
-    #5c030f,
-    #760000
+  --theme-dark-bgimage: radial-gradient(
+    circle,
+    #890000,
+    #6b0112,
+    #4a0816,
+    #290b12,
+    #000000
   );
   --theme-neitral-bgimage: url(@static/bg.jpg);
 
@@ -90,4 +91,29 @@ img {
 
 img {
   display: block;
+}
+
+/**STYLES SCROLLBAR*/
+
+* {
+  scrollbar-color: rgb(37, 56, 97) rgba(0, 0, 0, 0.5);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(37, 56, 97);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0.5);
 }
